@@ -1,0 +1,106 @@
+
+:root{
+    --vermelhoo:#B20D07;
+    --roxozulado:#411AB0;
+    --roxorosado:#9A21A3;
+    --roxoescuro:#5E1463;
+    --amarelado:#A3A109;
+    --amareloqueimado:#BA5802;
+
+    --fontetitulo:  ;
+    --fontetexto:  ;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+body{
+    background-image: url(../imagens/pexels-lucie-liz-3165335.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+header{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    background-color:#b20d07af;
+}
+header>nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+}
+header>nav>a{
+    font-size: 0.8em;
+    color: wheat;
+    padding: 3px;
+}
+main{
+    border-top: wheat solid 2px;
+    padding: 20px;
+    background-image: linear-gradient(65deg,#b20d07ae,#5e1463ba);
+    width:80%;
+    margin: auto;
+    color: wheat;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.575)
+}
+main>section{
+    margin-bottom: 20px;
+}
+main>section>h1{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+main>section>p{
+    margin-bottom: 8px;
+    text-indent: 20px;
+}
+div#container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+}
+div#container>div{
+    width: 200px;
+    height: 300px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#overwatch{
+    background-image: url(../imagens/overwatch\ \(5\).jpg);
+}
+div#overwatch:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    border: 1px solid rgb(58, 4, 58);
+}
+div#lol{
+    background-image: url(/imagens/lol.jpg);
+}
+div#lol:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    border: 1px solid gray;
+}
+div#masterduel{
+    background-image: url(/imagens/masterduel.jpg);
+}
+div#masterduel:hover{
+    scale: 1.1;
+    transition: 0.5s;
+    border: 1px solid wheat;
+}
+footer{
+    color: wheat;
+    margin-top: 20px;
+    background-color:#b20d078c;
+}
