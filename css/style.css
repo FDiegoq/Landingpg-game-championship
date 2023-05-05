@@ -1,4 +1,5 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 :root{
     --vermelhoo:#B20D07;
     --roxozulado:#411AB0;
@@ -7,8 +8,8 @@
     --amarelado:#A3A109;
     --amareloqueimado:#BA5802;
 
-    --fontetitulo:  ;
-    --fontetexto:  ;
+    --fontetitulo:'Bruno Ace', cursive;
+    --fontetexto:'Bebas Neue', cursive;
 }
 *{
     box-sizing: border-box;
@@ -18,10 +19,7 @@
     text-decoration: none;
 }
 body{
-    background-image: url(../imagens/pexels-lucie-liz-3165335.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
+    background-color: #5E1463;
 }
 header{
     margin-bottom: 20px;
@@ -29,12 +27,19 @@ header{
     justify-content: space-between;
     padding: 8px;
     background-color:#b20d07af;
+    border-radius: 0px 0px 15px 15px;
+}
+header>img{
+    border-radius: 50%;
+    border: 1px solid wheat;
+    height: 50px;
 }
 header>nav{
+    font-family: var(--fontetexto);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    gap: 5px;
+    gap: 8px;
 }
 header>nav>a{
     font-size: 0.8em;
@@ -42,22 +47,32 @@ header>nav>a{
     padding: 3px;
 }
 main{
-    border-top: wheat solid 2px;
     padding: 20px;
     background-image: linear-gradient(65deg,#b20d07ae,#5e1463ba);
     width:80%;
     margin: auto;
     color: wheat;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.575)
+    box-shadow: 1px 3px 6px 2px rgba(0, 0, 0, 0.575);
+    border-radius: 30px;
+    margin-bottom: 20px;
 }
 main>section{
     margin-bottom: 20px;
 }
 main>section>h1{
+    font-family: var(--fontetitulo);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main>section>h3{
+    font-family: var(--fontetitulo);
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 main>section>p{
+    font-family:var(--fontetexto) ;
+    font-weight: 300;
     margin-bottom: 8px;
     text-indent: 20px;
 }
@@ -74,14 +89,16 @@ div#container>div{
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 20px;
+    box-shadow:inset 1px 1px 17px 2px black;
 }
 div#overwatch{
+    box-shadow:inset 1px 1px 17px 2px black;
     background-image: url(../imagens/overwatch\ \(5\).jpg);
 }
 div#overwatch:hover{
     scale: 1.1;
     transition: 0.5s;
-    border: 1px solid rgb(58, 4, 58);
 }
 div#lol{
     background-image: url(/imagens/lol.jpg);
@@ -89,7 +106,6 @@ div#lol{
 div#lol:hover{
     scale: 1.1;
     transition: 0.5s;
-    border: 1px solid gray;
 }
 div#masterduel{
     background-image: url(/imagens/masterduel.jpg);
@@ -97,10 +113,4 @@ div#masterduel{
 div#masterduel:hover{
     scale: 1.1;
     transition: 0.5s;
-    border: 1px solid wheat;
-}
-footer{
-    color: wheat;
-    margin-top: 20px;
-    background-color:#b20d078c;
 }
